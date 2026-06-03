@@ -26,13 +26,13 @@ const scene = new THREE.Scene();
  *  Texture Loader
  */
 const textureLoader = new THREE.TextureLoader();
-const texture = textureLoader.load("/static/textures/matcaps/3.png");
+const texture = textureLoader.load("/textures/matcaps/3.png");
 texture.colorSpace = THREE.SRGBColorSpace;
 /**
  * Font loader
  */
 const fontLoader = new FontLoader();
-fontLoader.load("/static/fonts/helvetiker_regular.typeface.json", (font) => {
+fontLoader.load("/fonts/helvetiker_regular.typeface.json", (font) => {
   const textGeometry = new TextGeometry("Thank you!", {
     font: font,
     size: 0.7,
